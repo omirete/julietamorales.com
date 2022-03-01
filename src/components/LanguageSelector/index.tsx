@@ -14,7 +14,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ setLanguage }) => {
       <small>
         {lang._current === 'en' && (
           <Fragment>
-            <a href="#" className="text-info" onClick={() => setLanguage(es)}>
+            <a href="/" className="text-info" onClick={() => setLanguage(es)}>
               Español
             </a>
             <span> </span>|<span> </span>
@@ -25,7 +25,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ setLanguage }) => {
           <Fragment>
             Español
             <span> </span>|<span> </span>
-            <a href="#" className="text-info" onClick={() => setLanguage(en)}>
+            <a href="/" className="text-info" onClick={() => setLanguage(en)}>
               English
             </a>
           </Fragment>

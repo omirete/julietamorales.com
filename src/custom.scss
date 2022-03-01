@@ -20,6 +20,8 @@
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
 @import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
 // 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
@@ -31,10 +33,19 @@
 }
 
 .app-background {
-    // background: linear-gradient(30deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
     background-image: url('images/grass_blur30.jpg');
-    // background-repeat: repeat;
     background-size: 110%;
-    filter: blur(.2)
-    // background: linear-gradient(60deg, rgba(12,98,41,1) 0%, rgba(12,98,41,0.907236222125569) 35%, rgba(12,98,41,0.7979925246465773) 100%);
+    filter: blur(.2);
+}
+
+.hover-shadow:hover {
+    box-shadow: $box-shadow;
+}
+
+.hover-shadow-sm:hover {
+    box-shadow: $box-shadow-sm;
+}
+
+.hover-primary:hover {
+    color: "#ff00ff" !important;
 }

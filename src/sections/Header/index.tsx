@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     <AudioPlayer
       title="Escuchame!"
       url="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
-      className="mt-2 shadow-sm border rounded text-white app-background"
+      className="mt-3 shadow-sm border border-secondary rounded-top text-white app-background"
       // style={{backgroundColor: '#0c6229'}}
     >
       <div className="d-flex flex-row align-items-center">
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           <h6 className="mb-1">{lang.profile_card_subtitle}</h6>
           <p className="mb-0">{lang.profile_card_job_title}</p>
           <div className="mt-0">
-            <SocialRow iconClassName="text-white" />
+            <SocialRow iconClassName="link-light" />
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ function App() {
   return (
     <LangContext.Provider value={language}>
       <div className="w-100 row g-0 py-4 px-3 justify-content-center">
-        <div className="mb-4 col-sm-12 col-md-10 col-lg-8 p-4">
+        <div className="col-sm-12 col-md-10 col-lg-8">
           <LanguageSelector setLanguage={setLanguage} />
           <Header />
           <About />

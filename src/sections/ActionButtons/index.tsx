@@ -32,7 +32,7 @@ const ActionButtons: React.FC = () => {
         target="_blank"
       />
       <ActionButton
-        href="https://www.casadellibro.com/libro-santa-carolina/9788497439299/12350828"
+        href="https://lahistoriadelaconcha.com.ar/"
         className="btn btn-outline-dark mb-3"
         text={lang.my_podcast}
         iconClass="bi-mic"

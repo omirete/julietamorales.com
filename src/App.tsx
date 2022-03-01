@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './sections/Header'
+import About from './sections/About'
+import ActionButtons from './sections/ActionButtons'
+import Footer from './sections/Footer'
+import LanguageSelector from './components/LanguageSelector'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-100 row g-0 py-4 px-3 justify-content-center">
+      <div className="my-4 col-sm-12 col-md-10 col-lg-8 p-4">
+        <LanguageSelector />
+        <Header />
+        <About />
+        <ActionButtons />
+        <Footer />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

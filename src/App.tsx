@@ -3,18 +3,24 @@ import About from './sections/About'
 import ActionButtons from './sections/ActionButtons'
 import Footer from './sections/Footer'
 import LanguageSelector from './components/LanguageSelector'
+import LangContext from './contexts/LangContext'
+import en from './lang/en'
+import { useState } from 'react'
 
 function App() {
+  const [language, setLanguage] = useState(en)
   return (
-    <div className="w-100 row g-0 py-4 px-3 justify-content-center">
-      <div className="my-4 col-sm-12 col-md-10 col-lg-8 p-4">
-        <LanguageSelector />
-        <Header />
-        <About />
-        <ActionButtons />
-        <Footer />
+    <LangContext.Provider value={language}>
+      <div className="w-100 row g-0 py-4 px-3 justify-content-center">
+        <div className="my-4 col-sm-12 col-md-10 col-lg-8 p-4">
+          <LanguageSelector setLanguage={setLanguage} />
+          <Header />
+          <About />
+          <ActionButtons />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </LangContext.Provider>
   )
 }
 

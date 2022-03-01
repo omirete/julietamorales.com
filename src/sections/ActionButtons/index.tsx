@@ -1,13 +1,16 @@
+import { useContext } from 'react'
 import ActionButton from '../../components/ActionButton'
+import LangContext from '../../contexts/LangContext'
 
 const ActionButtons: React.FC = () => {
+  const lang = useContext(LangContext)
   return (
     <div className="d-flex flex-column mt-4">
       <ActionButton
-        href="cv/CV_Julieta_Morales_(Espa%f1ol).pdf"
-        download="cv/CV_Julieta_Morales_(Espa%f1ol).pdf"
+        href={lang.download_cv_link}
+        download={lang.download_cv_link}
         className="btn btn-outline-dark mb-3"
-        text="Descargá mi CV"
+        text={lang.download_cv}
         iconClass="bi-download"
         role="button"
         target="_blank"
@@ -15,7 +18,7 @@ const ActionButtons: React.FC = () => {
       <ActionButton
         href="https://articulo.mercadolibre.com.ar/mla-1122176278-libro-santa-carolina-julieta-morales-_jm"
         className="btn btn-outline-dark mb-3"
-        text="Conseguí mi libro en Argentina"
+        text={lang.get_my_book_arg}
         iconClass="bi-book"
         role="button"
         target="_blank"
@@ -23,7 +26,7 @@ const ActionButtons: React.FC = () => {
       <ActionButton
         href="https://www.casadellibro.com/libro-santa-carolina/9788497439299/12350828"
         className="btn btn-outline-dark mb-3"
-        text="Conseguí mi libro en Europa"
+        text={lang.get_my_book_eu}
         iconClass="bi-book"
         role="button"
         target="_blank"
@@ -31,7 +34,7 @@ const ActionButtons: React.FC = () => {
       <ActionButton
         href="https://www.casadellibro.com/libro-santa-carolina/9788497439299/12350828"
         className="btn btn-outline-dark mb-3"
-        text="Mi podcast: La historia de la concha"
+        text={lang.my_podcast}
         iconClass="bi-mic"
         role="button"
         target="_blank"

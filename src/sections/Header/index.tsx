@@ -1,7 +1,10 @@
+import { useContext } from 'react'
 import AudioPlayer from '../../components/AudioPlayer'
 import SocialRow from '../../components/SocialRow'
+import LangContext from '../../contexts/LangContext'
 
 const Header: React.FC = () => {
+  const lang = useContext(LangContext)
   return (
     <AudioPlayer
       title="Escuchame!"
@@ -19,8 +22,8 @@ const Header: React.FC = () => {
         />
         <div className="ms-2 flex-fill">
           <h5 className="align-items-center mb-0">Julieta Morales</h5>
-          <h6 className="mb-1">Activista feminista</h6>
-          <p className="mb-0">Oficial de comunicación en Equality Now</p>
+          <h6 className="mb-1">{lang.profile_card_subtitle}</h6>
+          <p className="mb-0">{lang.profile_card_job_title}</p>
           <div className="mt-0">
             <SocialRow iconClassName="text-white" />
           </div>

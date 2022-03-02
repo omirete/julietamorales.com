@@ -10,7 +10,6 @@ const Header: React.FC = () => {
       title="Escuchame!"
       url="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
       className="mt-3 shadow-sm border border-secondary rounded-top text-white app-background"
-      // style={{backgroundColor: '#0c6229'}}
     >
       <div className="d-flex flex-row align-items-center">
         <img

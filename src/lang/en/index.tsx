@@ -2,7 +2,7 @@ const en = {
   _code: 'en',
   _name: 'English',
   _flag: '🇬🇧',
-  profile_card_subtitle: 'Feminist activist',
+  profile_card_subtitle: 'Gender specialist',
   profile_card_job_title: 'Comms Officer at Equality Now',
   download_cv: 'Download my CV',
   download_cv_link: 'cv/CV_Julieta_Morales_(English).pdf',

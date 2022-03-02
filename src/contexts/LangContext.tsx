@@ -1,6 +1,6 @@
 import React from 'react'
-import en from '../lang/en'
-import es from '../lang/es'
+import en from 'lang/en'
+import es from 'lang/es'
 
 const LangContext = React.createContext(en)
 

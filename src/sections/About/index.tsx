@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import LangContext from '../../contexts/LangContext'
+import LangContext from 'contexts/LangContext'
 
 const About: React.FC = () => {
   const lang = useContext(LangContext)

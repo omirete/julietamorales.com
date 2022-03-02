@@ -1,7 +1,7 @@
 import { Dispatch, Fragment, SetStateAction, useContext } from 'react'
-import LangContext from '../../contexts/LangContext'
-import en from '../../lang/en'
-import es from '../../lang/es'
+import LangContext from 'contexts/LangContext'
+import en from 'lang/en'
+import es from 'lang/es'
 
 export interface LanguageSelectorProps {
   setLanguage: Dispatch<SetStateAction<typeof en>>

@@ -1,5 +1,5 @@
-import SocialRow from '../../components/SocialRow'
-import { ReactComponent as Signature } from '../../images/svg/signature.svg'
+import SocialRow from 'components/SocialRow'
+import { ReactComponent as Signature } from 'images/svg/signature.svg'
 
 const Footer: React.FC = () => {
   return (

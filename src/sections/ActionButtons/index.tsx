@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import ActionButton from '../../components/ActionButton'
-import LangContext from '../../contexts/LangContext'
+import ActionButton from 'components/ActionButton'
+import LangContext from 'contexts/LangContext'
 
 const ActionButtons: React.FC = () => {
   const lang = useContext(LangContext)

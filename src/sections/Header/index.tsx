@@ -1,7 +1,7 @@
 import { useContext } from 'react'
-import AudioPlayer from '../../components/AudioPlayer'
-import SocialRow from '../../components/SocialRow'
-import LangContext from '../../contexts/LangContext'
+import AudioPlayer from 'components/AudioPlayer'
+import SocialRow from 'components/SocialRow'
+import LangContext from 'contexts/LangContext'
 
 const Header: React.FC = () => {
   const lang = useContext(LangContext)

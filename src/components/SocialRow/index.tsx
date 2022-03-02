@@ -1,5 +1,5 @@
 import { HTMLProps } from 'react'
-import ActionButton from '../ActionButton'
+import ActionButton from 'components/ActionButton'
 
 export interface SocialRowProps extends HTMLProps<HTMLDivElement> {
   iconClassName?: string

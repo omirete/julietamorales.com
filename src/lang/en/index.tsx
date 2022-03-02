@@ -5,7 +5,7 @@ const en = {
   profile_card_subtitle: 'Feminist activist',
   profile_card_job_title: 'Comms Officer at Equality Now',
   download_cv: 'Download my CV',
-  download_cv_link: 'https://www.julietamorales.com/cv/CV_Julieta_Morales_(English).pdf',
+  download_cv_link: 'cv/CV_Julieta_Morales_(English).pdf',
   get_my_book_arg: 'Get my book in Argentina',
   get_my_book_eu: 'Get my book in Europe',
   my_podcast: 'My podcast: "La historia de la concha"',

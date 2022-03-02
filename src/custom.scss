@@ -39,13 +39,43 @@
 }
 
 .hover-shadow:hover {
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow !important;
 }
 
 .hover-shadow-sm:hover {
-    box-shadow: $box-shadow-sm;
+    box-shadow: $box-shadow-sm !important;
 }
 
 .hover-primary:hover {
     color: "#ff00ff" !important;
+}
+
+.hover-bg-primary:hover {
+    background-color: $primary !important;
+}
+
+.hover-bg-info:hover {
+    background-color: $secondary !important;
+}
+
+.transition-bg-color {
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.transition-all {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.hover-enlarge:hover {
+    transform: scale(1.005);
+}
+
+.hover-enlarge-2:hover {
+    transform: scale(1.1);
 }

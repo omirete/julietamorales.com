@@ -11,33 +11,39 @@ const About: React.FC = () => {
     { icon: '🌎', text: lang.about_4 },
     { icon: '✈️', text: lang.about_5 },
   ]
-  const iconClasses = 'col-2 d-flex align-items-center justify-content-center h1'
+  const iconClasses =
+    'd-flex align-items-center justify-content-center h1 px-3 m-0 py-0 transition-all hover-enlarge-2'
   return (
-    <div className="mt-4 px-3 pt-2 pb-4 border border-secondary rounded shadow-sm">
+    <div className="">
       {aboutContent.map((card, i) => (
-        <p className="row mx-3 mt-4">
+        <div className="d-flex flex-row flex-nowrap mt-4">
           {i % 2 === 0 && (
-            <div className={iconClasses}>
+            <div className={iconClasses} style={{ minWidth: '15%' }}>
               {card.icon}
             </div>
           )}
           <div
             className={`
-                col-10
                 border-${i % 2 !== 0 ? 'end' : 'start'}
                 rounded-${i % 2 !== 0 ? 'start' : 'end'}
+                text-${i % 2 !== 0 ? 'end' : 'start'}
+                px-2 py-1
                 border-3 bg-light
                 shadow-sm
+                transition-all
+                hover-enlarge
+                hover-shadow
+                w-100
               `}
           >
             {card.text}
           </div>
           {i % 2 !== 0 && (
-            <div className={iconClasses}>
+            <div className={iconClasses} style={{ minWidth: '15%' }}>
               {card.icon}
             </div>
           )}
-        </p>
+        </div>
       ))}
     </div>
   )

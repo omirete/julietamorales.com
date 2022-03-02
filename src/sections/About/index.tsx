@@ -24,16 +24,17 @@ const About: React.FC = () => {
           )}
           <div
             className={`
+                transition-all
                 border-${i % 2 !== 0 ? 'end' : 'start'}
+                border-3 border-white
                 rounded-${i % 2 !== 0 ? 'start' : 'end'}
                 text-${i % 2 !== 0 ? 'end' : 'start'}
                 px-2 py-1
-                border-3 bg-light
-                shadow-sm
-                transition-all
+                shadow-sm hover-shadow
                 hover-enlarge
-                hover-shadow
                 w-100
+                bg-white bg-opacity-25
+                text-white
               `}
           >
             {card.text}

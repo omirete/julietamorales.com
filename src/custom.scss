@@ -33,9 +33,15 @@
 }
 
 .app-background {
-    background-image: url('images/grass_blur30.jpg');
-    background-size: 110%;
-    filter: blur(.2);
+    background-image: linear-gradient(45deg, #051937, #004d7a, #008793, #00bf72);
+}
+
+.header-background {
+    // background-image: url('images/grass_blur30.jpg');
+    // background-size: 110%;
+    // filter: blur(.2);
+    background-color:#557CCD;
+    border-color: #ffffff50;
 }
 
 .hover-shadow:hover {
@@ -78,4 +84,28 @@
 
 .hover-enlarge-2:hover {
     transform: scale(1.1);
+}
+
+.hover-opacity-100:hover {
+    opacity: 1 !important;
+}
+
+.hover-bg-opacity-100:hover {
+    --bs-bg-opacity: 1 !important;
+}
+
+.hover-bg-opacity-75:hover {
+    --bs-bg-opacity: 0.75 !important;
+}
+
+.hover-text-dark:hover {
+    color: $dark !important;
+}
+
+.check-bg-opacity-50:checked {
+    --bs-bg-opacity: 0.5;
+}
+
+.bg-opacity-0 {
+    --bs-bg-opacity: 0;
 }

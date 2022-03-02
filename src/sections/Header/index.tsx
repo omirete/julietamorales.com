@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     <AudioPlayer
       title="Escuchame!"
       url="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
-      className="mt-3 shadow-sm border border-secondary text-white rounded app-background"
+      className="mt-3 text-white bg-white bg-opacity-25 rounded"
     >
       <div className="d-flex flex-row align-items-center">
         <img

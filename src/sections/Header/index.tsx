@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           <h6 className="mb-1">{lang.profile_card_subtitle}</h6>
           <p className="mb-0">{lang.profile_card_job_title}</p>
           <div className="mt-0">
-            <SocialRow iconClassName="link-light" />
+            <SocialRow iconClassName="link-light opacity-75 hover-opacity-100 transition-all" />
           </div>
         </div>
       </div>

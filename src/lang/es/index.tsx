@@ -13,7 +13,8 @@ const es = {
   about_2: 'Tengo un Máster en Estudios de Género y Comunicaciones y un Posgrado en Periodismo Literario por la Universidad Autónoma de Barcelona (España).',
   about_3: 'Pasé los últimos 6 años trabajando en el ámbito de la comunicación: primero como periodista cubriendo historias feministas y, luego, como creativa digital.',
   about_4: 'Trabajé en organizaciones internacionales como UNESCO, la Organización de los Estados Americanos (OEA) y WIEGO (una ONG enfocada en mejorar las condiciones para trabajadoras de la economía informal).',
-  about_5: 'Además de Argentina, viví en los Estados Unidos, en Francia y en España.',
+  about_5: <span>Actualmente trabajo para Equality Now (<a href="https://www.equalitynow.org/staff_members/julieta-morales/" className="link-dark" target="_blank">¡aprendé más acerca de mi puesto acá!</a>). Utilizamos el poder de la ley para crear igualdad duradera para mujeres y niñas en todo el mundo.</span>,
+  about_6: 'Además de Argentina, viví en los Estados Unidos, en Francia y en España.',
 }
 
 export default es

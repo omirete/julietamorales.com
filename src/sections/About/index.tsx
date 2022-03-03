@@ -1,15 +1,16 @@
-import { useContext } from 'react'
+import { ReactElement, useContext } from 'react'
 import LangContext from 'contexts/LangContext'
 
 const About: React.FC = () => {
   const lang = useContext(LangContext)
 
-  const aboutContent = [
+  const aboutContent: Array<{icon: string | ReactElement, text: string | ReactElement}> = [
     { icon: '🇦🇷', text: lang.about_1 },
     { icon: '📚', text: lang.about_2 },
     { icon: '👩🏻‍💻', text: lang.about_3 },
     { icon: '🌎', text: lang.about_4 },
-    { icon: '✈️', text: lang.about_5 },
+    { icon: '⚖️', text: lang.about_5 },
+    { icon: '✈️', text: lang.about_6 },
   ]
   const iconClasses =
     'd-flex align-items-center justify-content-center h1 px-3 m-0 py-0 transition-all hover-enlarge-2'

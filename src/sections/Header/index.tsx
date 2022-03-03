@@ -15,8 +15,9 @@ const Header: React.FC = () => {
         <img
           src="profile.jpg"
           alt="perfil"
-          width="100px"
+          // width="100px"
           height="100px"
+          // style={{minHeight: '100%'}}
           className="rounded shadow-sm"
         />
         <div className="ms-2 flex-fill">

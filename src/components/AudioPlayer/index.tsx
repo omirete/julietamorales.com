@@ -33,22 +33,35 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
               h1
               ${playing ? 'bi-pause' : 'bi-play-circle-fill'}
               hover-pointer
+              d-none d-sm-block
               `}
             onClick={toggle}
           ></div>
         </div>
       </div>
-      <div
-        className="w-100 mt-2 bg-dark bg-opacity-25 flex-fill"
-        style={{ minHeight: '7px' }}
-      >
+      <div className="d-flex flex-row mt-2 align-items-center">
         <div
-          className="bg-dark"
-          style={{
-            minHeight: '7px',
-            width: progress * 100 + '%',
-          }}
+          className={`
+          h1 mb-0
+          ${playing ? 'bi-pause' : 'bi-play-circle-fill'}
+          hover-pointer
+          d-sm-none me-2
+          `}
+          onClick={toggle}
         ></div>
+        <div
+          className="w-100 bg-dark bg-opacity-25 flex-fill"
+          style={{ minHeight: '7px', maxHeight: '21px' }}
+        >
+          <div
+            className="bg-dark"
+            style={{
+              minHeight: '7px',
+              maxHeight: '21px',
+              width: progress * 100 + '%',
+            }}
+          ></div>
+        </div>
       </div>
     </div>
   )

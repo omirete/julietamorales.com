@@ -1,8 +1,6 @@
 import {
   Dispatch,
   Fragment,
-  HTMLProps,
-  ReactElement,
   SetStateAction,
   useContext,
 } from 'react'

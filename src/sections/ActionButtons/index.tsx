@@ -4,7 +4,7 @@ import LangContext from 'contexts/LangContext'
 
 const ActionButtons: React.FC = () => {
   const lang = useContext(LangContext)
-  const btnClasses = "btn btn-outline-light mb-3 shadow-sm"
+  const btnClasses = "btn btn-dark border-0 bg-white bg-opacity-25 hover-bg-opacity-75 hover-text-dark text-white mb-3 shadow-sm"
   return (
     <div className="d-flex flex-column mt-4">
       <ActionButton

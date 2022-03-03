@@ -13,7 +13,7 @@ const PlayPauseButton: React.FC<{
   toggleHandler: () => void
 }> = ({ playing, toggleHandler }) => {
   const iconClasses = 'd-block hover-pointer transition-all fill-white'
-  const iconStyles = {width: '4ch', height: '4ch'}
+  const iconStyles = {width: '5ch', height: '5ch'}
   return (
     <div onClick={toggleHandler}>
       {playing && <IconPause className={iconClasses} style={iconStyles} />}

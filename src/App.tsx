@@ -14,8 +14,10 @@ function App() {
     <LangContext.Provider value={language}>
       <div className="w-100 row g-0 py-4 px-3 justify-content-center app-background">
         <div className="col-sm-12 col-md-10 col-lg-8">
-          <LanguageSelector setLanguage={setLanguage} />
-          <Header />
+          <div className="min-vh-100 d-flex flex-column">
+            <LanguageSelector setLanguage={setLanguage} />
+            <Header />
+          </div>
           <About />
           <SectionDivider />
           <ActionButtons />

@@ -27,9 +27,9 @@ const About: React.FC = () => {
     </div>
   )
   return (
-    <div className="">
+    <div>
       {aboutContent.map((card, i) => (
-        <div className="d-flex flex-row flex-nowrap mt-4">
+        <div className="d-flex flex-row flex-nowrap mt-5 pt-4 justify-content-center">
           {i % 2 === 0 && (
             <CardIcon icon={card.icon} />
           )}

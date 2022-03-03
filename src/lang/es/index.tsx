@@ -1,7 +1,9 @@
+import { ReactComponent as IconFlagSpain } from 'assets/twemoji/flag_spain.svg'
+
 const es = {
   _code: 'es',
   _name: 'Español',
-  _flag: '🇪🇸',
+  _flag: <IconFlagSpain className="d-block" style={{ width: '1em' }} />,
   profile_card_subtitle: 'Especialista en género',
   profile_card_job_title: 'Oficial de comunicación en Equality Now',
   download_cv: 'Descarga mi CV',

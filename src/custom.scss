@@ -37,9 +37,6 @@
 }
 
 .header-background {
-    // background-image: url('images/grass_blur30.jpg');
-    // background-size: 110%;
-    // filter: blur(.2);
     background-color:#557CCD;
     border-color: #ffffff50;
 }
@@ -108,4 +105,8 @@
 
 .bg-opacity-0 {
     --bs-bg-opacity: 0;
+}
+
+.fill-white {
+    fill: #ffffff;
 }

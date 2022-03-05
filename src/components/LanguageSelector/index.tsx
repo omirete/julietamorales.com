@@ -7,7 +7,7 @@ import {
 import LangContext, { availableLanguages } from 'contexts/LangContext'
 
 export interface LanguageSelectorProps {
-  setLanguage: Dispatch<SetStateAction<typeof availableLanguages[0]>>
+  setLanguage: Dispatch<SetStateAction<string>>
 }
 
 const LanguageSelector: React.FC<LanguageSelectorProps> = ({ setLanguage }) => {
@@ -29,7 +29,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ setLanguage }) => {
                 id={`btn-lang-${avLang._code}`}
                 autoComplete="off"
                 checked={isActive}
-                onClick={() => setLanguage(avLang)}
+                onClick={() => setLanguage(avLang._code)}
               />
               <label
                 // className="btn btn-sm btn-outline-light border-0 rounded shadow-none me-1"

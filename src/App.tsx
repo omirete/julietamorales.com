@@ -4,12 +4,11 @@ import ActionButtons from './sections/ActionButtons'
 import Footer from './sections/Footer'
 import LanguageSelector from './components/LanguageSelector'
 import LangContext from './contexts/LangContext'
-import en from './lang/en'
-import { useState } from 'react'
 import SectionDivider from 'components/SectionDivider'
+import useLanguage from 'hooks/useLanguage'
 
 function App() {
-  const [language, setLanguage] = useState(en)
+  const [language, setLanguage] = useLanguage()
   return (
     <LangContext.Provider value={language}>
       <div className="w-100 row g-0 py-4 px-3 justify-content-center app-background">

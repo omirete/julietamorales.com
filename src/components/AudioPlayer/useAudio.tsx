@@ -1,20 +1,12 @@
 import { useEffect, useState } from 'react'
 
-const useAudioPlayer = (url: string): [boolean, number, () => void] => {
+const useAudio = (url: string): [HTMLAudioElement, number] => {
   const [audio] = useState(new Audio(url))
   const [progress, setProgress] = useState(0)
-  const [playing, setPlaying] = useState(false)
-
-  const toggle = () => setPlaying(!playing)
-
-  useEffect(() => {
-    playing ? audio.play() : audio.pause()
-  }, [playing, audio])
 
   useEffect(() => {
     const handlerSoundEnded = () => {
-        setPlaying(false)
-        setProgress(0)
+      setProgress(0)
     }
     audio.addEventListener('ended', handlerSoundEnded)
     return () => {
@@ -33,7 +25,7 @@ const useAudioPlayer = (url: string): [boolean, number, () => void] => {
     return () => clearInterval(interval)
   }, [audio])
 
-  return [playing, progress, toggle]
+  return [audio, progress]
 }
 
-export default useAudioPlayer
+export default useAudio

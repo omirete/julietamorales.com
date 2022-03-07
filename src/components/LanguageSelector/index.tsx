@@ -36,18 +36,16 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ setLanguage }) => {
                 className={`
                   transition-all
                   py-1 px-2 me-1
-                  rounded
-                  bg-white
+                  bg-white rounded
                   ${isActive ? 'bg-opacity-50' : 'bg-opacity-0'}
                   hover-bg-opacity-75 hover-text-dark
-                  text-white
-                  small
+                  text-white small
                   d-flex flex-row flex-nowrap align-items-center
                 `}
                 htmlFor={`btn-lang-${avLang._code}`}
               >
                 <div className="h5 m-0 p-0">{avLang._flag}</div>
-                <div className="ms-1">{avLang._name}</div>
+                <div className="ms-1 d-none d-sm-block">{avLang._name}</div>
               </label>
             </Fragment>
           )

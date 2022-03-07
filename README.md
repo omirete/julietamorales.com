@@ -2,6 +2,7 @@
 
 Made with:
 
+* Love
 * Typescript
 * Bootstrap (css only)
 * React

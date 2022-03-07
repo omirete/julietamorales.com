@@ -4,6 +4,7 @@ const es = {
   _code: 'es',
   _name: 'Español',
   _flag: <IconFlagSpain className="d-block" style={{ width: '1em' }} />,
+  _xml_lang_code: 'es-ES',
   profile_card_subtitle: 'Especialista en género',
   profile_card_job_title: 'Oficial de comunicación en Equality Now',
   scroll_down_to_see_more: 'Desplázate hacia abajo',
@@ -18,6 +19,7 @@ const es = {
   about_4: 'Trabajé en organizaciones internacionales como UNESCO, la Organización de los Estados Americanos (OEA) y WIEGO (una ONG enfocada en mejorar las condiciones para trabajadoras de la economía informal).',
   about_5: <span>Actualmente trabajo para Equality Now (<a href="https://www.equalitynow.org/staff_members/julieta-morales/" className="link-dark" target="_blank" rel="noreferrer">¡aprendé más acerca de mi puesto acá!</a>). Utilizamos el poder de la ley para crear igualdad duradera para mujeres y niñas en todo el mundo.</span>,
   about_6: 'Además de Argentina, viví en los Estados Unidos, en Francia y en España.',
+  ariaLabel_language_selector: ''
 }
 
 export default es

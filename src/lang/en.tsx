@@ -4,6 +4,7 @@ const en = {
   _code: 'en',
   _name: 'English',
   _flag: <IconFlagUK className="d-block" style={{ width: '1em' }} />,
+  _xml_lang_code: 'en-US',
   profile_card_subtitle: 'Gender specialist',
   profile_card_job_title: 'Comms Officer at Equality Now',
   scroll_down_to_see_more: 'Scroll down to read more',
@@ -36,6 +37,7 @@ const en = {
     </span>
   ),
   about_6: 'I’ve lived in the United States, France and Spain.',
+  ariaLabel_language_selector: ''
 }
 
 export default en

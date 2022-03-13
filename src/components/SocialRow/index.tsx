@@ -28,7 +28,7 @@ const SocialNetworks = [
   },
   {
     description: 'mail',
-    href: 'https://www.linkedin.com/in/julietamo/',
+    href: 'mailto:hello@julietamorales.com',
     iconClass: 'bi-envelope',
   },
 ]

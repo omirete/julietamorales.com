@@ -20,7 +20,7 @@ const About: React.FC = () => {
     { icon: <IconAirplane style={iconStyles} />, text: lang.about_6 },
   ]
   const iconClasses =
-    'd-flex align-items-center justify-content-center h1 px-3 m-0 py-0 transition-all hover-enlarge-2'
+    'd-flex align-items-center justify-content-center h1 px-3 m-0 py-0 transition-all'
   const CardIcon: React.FC<{ icon: string | ReactElement }> = ({ icon }) => (
     <div className={iconClasses} style={{ minWidth: '15%' }}>
       {icon}
@@ -42,7 +42,6 @@ const About: React.FC = () => {
                 text-${i % 2 !== 0 ? 'end' : 'start'}
                 px-2 py-1
                 shadow-sm hover-shadow
-                hover-enlarge
                 w-100
                 bg-white bg-opacity-25
                 text-white

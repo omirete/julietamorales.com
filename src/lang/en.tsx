@@ -8,6 +8,7 @@ const en = {
   profile_card_subtitle: 'Gender specialist',
   profile_card_job_title: 'Comms Officer at Equality Now',
   scroll_down_to_see_more: 'Scroll down to read more',
+  url_recording: "recordings/en.mp3",
   download_cv: 'Download my CV',
   download_cv_link: 'cv/CV_Julieta_Morales_(English).pdf',
   get_my_book_arg: 'Get my book in Argentina',

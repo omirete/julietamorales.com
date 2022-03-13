@@ -8,6 +8,7 @@ const es = {
   profile_card_subtitle: 'Especialista en género',
   profile_card_job_title: 'Oficial de comunicación en Equality Now',
   scroll_down_to_see_more: 'Desplázate hacia abajo',
+  url_recording: "recordings/es.mp3",
   download_cv: 'Descarga mi CV',
   download_cv_link: 'cv/CV_Julieta_Morales_(Espa%f1ol).pdf',
   get_my_book_arg: 'Consigue mi libro en Argentina',

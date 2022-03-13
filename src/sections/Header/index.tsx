@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     <div className="mt-4 d-flex flex-column flex-fill">
       <AudioPlayer
         title="Escuchame!"
-        url="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
+        url={lang.url_recording}
         className="text-white bg-white bg-opacity-25 rounded w-100 mt-4"
       >
         <div className="d-flex flex-row align-items-center">
